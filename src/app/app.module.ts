@@ -5,14 +5,19 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SiteNavComponent } from './shared/site-nav/site-nav.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { SiteFooterComponent } from './shared/site-footer/site-footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    SiteNavComponent
+    SiteNavComponent,
+    SiteFooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot(),
   ],
   exports: [
 
